@@ -1,0 +1,29 @@
+{
+  "name": "express-node-epic",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Node App with express",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "npm run test"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "callBacks"
+  ],
+  "author": "mbanda1",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^4.6.2",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
