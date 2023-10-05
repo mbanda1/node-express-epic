@@ -1,4 +1,5 @@
 import items from '../data.js'
+import {getUserById} from '../db.js'
 
 export const getOne = () => async (req, res, next) => {
     try {
@@ -40,4 +41,17 @@ export const addOne = () => async (req, res, next) => {
     }
 };
 
+
+export const getOneFromDb = () => async (req, res, next) => {
+    try {
+        const { id } = req.params
+ 
+        const item = await getUserById(id)
+
+        res.status(200);
+        res.send(item)
+    } catch (error) {
+        next(error);
+    }
+};
 
